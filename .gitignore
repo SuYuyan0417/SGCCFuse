@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Large model weights (excluded by user request)
+model-best.pt
+
+# OS
+.DS_Store
+Thumbs.db
