@@ -75,11 +75,20 @@ python test.py
 ```
 
 - Fused output images are saved to `./result/ir-vi/` (the directory name matches the dataset name).
-- By default, the pretrained weights at `./model/a3_b1_c1_d2/20260726_1625_1/model_checkpoint_00400.pt` are used.
+- By default, `test.py` loads the pretrained weights from `./model/model-best.pt` (see [Pretrained Weights](#pretrained-weights) for how to obtain them).
 
 ## Training
 
 The training code will be released after the paper is formally accepted.
+
+## Pretrained Weights
+
+The trained model weights (`model-best.pt`, ~143 MB) are shared via Baidu Netdisk:
+
+- **Download:** [model-best.pt (Baidu Netdisk)](https://pan.baidu.com/s/13aMfW34TNVVqzivWptesOg?pwd=0417)
+- **Extraction code:** `0417`
+
+After downloading, place the file at `./model/model-best.pt` (create the `model/` directory if it does not exist). The inference script `test.py` loads this path by default.
 
 ## Core Innovations
 
