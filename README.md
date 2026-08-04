@@ -83,7 +83,7 @@ The training code will be released after the paper is formally accepted.
 
 ## Pretrained Weights
 
-The trained model weights (`model-best.pt`, ~143 MB) are shared via Baidu Netdisk:
+The trained model weights (`model-best.pt`, 136.4 MB) are shared via Baidu Netdisk:
 
 - **Download:** [model-best.pt (Baidu Netdisk)](https://pan.baidu.com/s/13aMfW34TNVVqzivWptesOg?pwd=0417)
 - **Extraction code:** `0417`
