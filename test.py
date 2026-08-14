@@ -62,7 +62,7 @@ def test(dataset_name, data_root, test_out_path, data_folder_name=None):
     os.makedirs(test_out_folder)
     ds_key = dataset_name.rstrip('-')
     if ds_key in ['ir-vi', 'IR-VIS']:
-        model_path = './model/model-best.pt'
+        model_path = './model/best.pt'
     else:
         raise ValueError(f"Unsupported dataset_name: {dataset_name}")
     net = Model()
