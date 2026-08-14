@@ -26,8 +26,8 @@ pip install torch torchvision numpy pillow tqdm natsort
 │   ├── sfe_block.py       # Innovation 1: SFE saliency feature extraction
 │   ├── cpca_block.py      # Innovation 2: CPCA cycle-consistent progressive cross-attention
 │   ├── shared_encoder.py  # Shared encoder
-│   ├── scale_block.py     # ScaleBlock (ConvNeXt-v2 style basic block)
-│   └── module_util.py     # Utility functions (initialize_weights)
+│   ├── scale_block.py      # ScaleBlock (ConvNeXt-v2 style basic block)
+│   └── module_util.py      # Utility functions (initialize_weights)
 ├── train_logging.py       # Training script
 ├── test.py                # Test/inference script
 ├── datasets_MSRS.py       # Dataset loader (train/val)
@@ -75,7 +75,7 @@ python test.py
 ```
 
 - Fused output images are saved to `./result/ir-vi/` (the directory name matches the dataset name).
-- By default, `test.py` loads the pretrained weights from `./model/model-best.pt` (see [Pretrained Weights](#pretrained-weights) for how to obtain them).
+- By default, `test.py` loads the pretrained weights from `./model/best.pt` (see [Pretrained Weights](#pretrained-weights) for how to obtain them).
 
 ## Training
 
@@ -83,12 +83,12 @@ The training code will be released after the paper is formally accepted.
 
 ## Pretrained Weights
 
-The trained model weights (`model-best.pt`, 136.4 MB) are shared via Baidu Netdisk:
+The trained model weights (`best.pt`, 136.4 MB) are shared via Baidu Netdisk:
 
-- **Download:** [model-best.pt (Baidu Netdisk)](https://pan.baidu.com/s/13aMfW34TNVVqzivWptesOg?pwd=0417)
+- **Download:** [best.pt (Baidu Netdisk)](https://pan.baidu.com/s/1M3o2ZhRI_-eOwGE_Ork2JA?pwd=0417)
 - **Extraction code:** `0417`
 
-After downloading, place the file at `./model/model-best.pt` (create the `model/` directory if it does not exist). The inference script `test.py` loads this path by default.
+After downloading, place the file at `./model/best.pt` (create the `model/` directory if it does not exist). The inference script `test.py` loads this path by default.
 
 ## Core Innovations
 
