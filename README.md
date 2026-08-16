@@ -41,7 +41,7 @@ pip install torch torchvision numpy pillow tqdm natsort
 
 ### Test Set
 
-`test.py` automatically detects dataset folders under `./data/` (supports `ir-vi` / `MRI-CT` / `MRI-PET` / `MRI-SPECT`).
+`test.py` automatically detects dataset folders under `./data/` (supports `ir-vi`).
 For infrared-visible fusion, place the test set under `./data/ir-vi/` with the following structure:
 
 ```
